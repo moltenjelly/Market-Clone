@@ -43,17 +43,23 @@ main {
 }
 
 .item-list__info-price {
-  font-size: bold;
+  font-weight: bold;
 }
 
 .write-btn {
-  font-size: 15px;
-  position: fixed;
+  background-color: var(--button-primary);
   color: white;
   padding: 10px 15px 10px 15px;
+  font-size: 15px;
+  border-radius: 30px;
+  position: fixed;
   bottom: 150px;
   right: 20px;
-  background-color: #fe6f0f;
-  border-radius: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.write-btn:hover {
+  background-color: var(--button-hover);
 }
